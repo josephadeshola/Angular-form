@@ -1,0 +1,23 @@
+<div class="mt-5 py-5">
+    <!-- <div class="col-3 mt-3" *ngFor="let item of userData , let i =index">
+        <button (click)="checkindex(i)">checkIndex</button>
+        <p>{{item.Firstname}}</p>
+        <p>{{item.Lastname}}</p>
+        <p>{{item.Email}}</p>
+        <p>{{item.Password}}</p>
+    </div>
+     -->
+        <div class="{{style}}" [style.color]="special==true?'red':'blue'"[style.background-color]="special==true?'white':'gray'"> 
+        <div class="{{classStyle}}">{{message}}</div>
+        <h4 class="text-center text-primary">Create Account</h4>
+        <input type="text" placeholder="first-name" [(ngModel)]="firstname" class="{{input}}">
+        <input type="text" placeholder="last-name" [(ngModel)]="lastname" class="{{input}}">
+        <input type="text" placeholder="Email" [(ngModel)]="email" class="{{input}}">
+        <input type="text" placeholder="Password" [(ngModel)]="password"  class="{{input}}">
+        <button class="{{btn}}" (click)="getStyle()">Register</button>
+    </div>
+<!-- <div class="d-flex text-center">
+    <button class="col-1 text-light btn" (click)="findBtnColor()" [style.background-color]="change==true?'red':'green'">sign-up</button>
+    <button class="col-1 btn">login</button>
+</div> -->
+</div>

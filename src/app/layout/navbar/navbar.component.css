@@ -1,0 +1,174 @@
+li {
+    list-style: none;
+}
+
+li a {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+li a :hover {
+    transition-duration: 2s;
+}
+
+.getfont {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.navbar-toggler-icon {
+    background-color: rgba(43, 170, 243, 0.521) !important;
+    border-radius: 20px;
+
+}
+
+.getimage-h {
+    margin-top: -40px;
+    
+}
+.get-style{
+    border-radius: 20px;
+    background: linear-gradient(45deg, #a6cbd3d0, #8abce4);
+}
+.navbar {
+
+    background: linear-gradient(to left, #c9dae4, #fdfeffea);
+    animation-name: fade-in-right;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+@keyframes fade-in-right {
+
+    0% {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+.at-item {
+
+    animation-name: bounce-top;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+.at-item:hover {
+
+    animation-name: bounce-get;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+@keyframes bounce-get {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-24px);
+    }
+
+    55% {
+        transform: translateY(0);
+    }
+
+    65% {
+        transform: translateY(-12px);
+    }
+
+    75% {
+        transform: translateY(0);
+    }
+
+    82% {
+        transform: translateY(-6px);
+    }
+
+    87% {
+        transform: translateY(0);
+    }
+
+    93% {
+        transform: translateY(-4px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce-top {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-24px);
+    }
+
+    55% {
+        transform: translateY(0);
+    }
+
+    65% {
+        transform: translateY(-12px);
+    }
+
+    75% {
+        transform: translateY(0);
+    }
+
+    82% {
+        transform: translateY(-6px);
+    }
+
+    87% {
+        transform: translateY(0);
+    }
+
+    93% {
+        transform: translateY(-4px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width:688px) {
+
+    .getfont {
+        font-size: 13px;
+        font-weight: 500;
+    }
+}

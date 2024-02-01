@@ -1,0 +1,47 @@
+<div class="container mt-5 py-5">
+    <div class="row">
+        <h2>Dashboard</h2>
+        <div class="mt-4">
+            <div>
+                <span *ngIf="getCurrent">FIRST_NAME:{{getCurrent.Firstname}}</span>
+            </div>
+            <hr>
+            <div>
+                <span *ngIf="getCurrent">LAST_NAME:{{getCurrent.Lastname}}</span>
+            </div>
+            <hr>
+            <div>
+                <span *ngIf="getCurrent">EMAIL_ADDRESS:{{getCurrent.Email}}</span>
+            </div>
+            <hr>
+        </div>
+      
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" placeholder="first-name" [(ngModel)]="user.firstname" class="{{input}}">
+                    <input type="text" placeholder="last-name" [(ngModel)]="user.lastname" class="{{input}}">
+                    <input type="text" placeholder="Email" [(ngModel)]="user.email" class="{{input}}">
+                    <input type="text" placeholder="Password" [(ngModel)]="user.password"  class="{{input}}">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary" (click)="editUser()">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="d-flex gap-3">
+            
+            <button class="btn w-100 btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button>
+            <button class="btn w-100 btn-danger" (click)="deleteUser(index)">Delete</button>
+            <!-- Button trigger modal -->
+
+        </div>
+    </div>
+</div>

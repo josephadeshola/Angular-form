@@ -1,0 +1,9 @@
+<div class="mt-5 py-5">
+    <div class="{{style}}">
+        <div class="{{classStyle}}">{{message}}</div>
+        <h4 class="text-center">Login</h4>
+        <input type="text" placeholder="Email" [(ngModel)]="email" class="{{input}}">
+        <input type="text" placeholder="Password" [(ngModel)]="password" class="{{input}}">
+        <button class="{{btn}}" (click)="LoginUser()">login</button>
+    </div>
+</div>
