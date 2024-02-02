@@ -7,7 +7,7 @@ import { myguardGuard } from './guardes/myguard.guard';
 
 export const routes: Routes = [
     {path:'',component:NavbarComponent,children:[
-        {path:'create',component:FirstComponent},
+        {path:'',component:FirstComponent},
         {path:'login',component:LoginComponent},
         {path:'dashboard',component:DashboardComponent,canActivate:[myguardGuard]},
     ]}

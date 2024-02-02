@@ -41,6 +41,9 @@ li a :hover {
     animation-direction: normal;
     animation-fill-mode: none;
 }
+.offcanvas-body{
+    height: 50vh !important;
+}
 @keyframes fade-in-right {
 
     0% {
